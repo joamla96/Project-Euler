@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 
 namespace Core {
-	public class Maths {
+	public class Multiples {
 		public int Number { get; set; }
 		public int MaxLimit { get; set; }
 		public object Result { get; set; }
 
-		public Maths() {
+		public Multiples() {
 
 		}
 
-		public Maths(int N, int L) {
+		public Multiples(int N, int L) {
 			this.Number = N;
 			this.MaxLimit = L;
 		}

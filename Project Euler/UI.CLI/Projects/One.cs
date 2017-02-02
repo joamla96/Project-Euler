@@ -7,8 +7,8 @@ using System.Threading;
 namespace UI.CLI.Projects {
 	class One {
 		public static void Run() {
-			Maths Three = new Maths(3, 1000);
-			Maths Five = new Maths(5, 1000);
+			Multiples Three = new Multiples(3, 1000);
+			Multiples Five = new Multiples(5, 1000);
 
 
 			// Gather their multiples
@@ -37,7 +37,7 @@ namespace UI.CLI.Projects {
 
 			IEnumerable<double> Result = ResultThree.Union(ResultFive);
 
-			Maths Final = new Maths();
+			Multiples Final = new Multiples();
 			Final.Result = Result;
 
 			// Spin off one last thread for the summing
