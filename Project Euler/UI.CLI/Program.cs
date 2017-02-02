@@ -1,5 +1,5 @@
-﻿using System;
-using Core;
+﻿using Core;
+using System;
 using UI.CLI.Projects;
 
 namespace UI.CLI {
@@ -35,7 +35,7 @@ namespace UI.CLI {
 		}
 
 		private void P1() {
-			One Ex = new One();
+			One.Run();
 		}
 	}
 }
