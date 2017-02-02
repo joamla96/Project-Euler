@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.CLU", "UI.CLU\UI.CLU.csproj", "{C533FD14-B340-445B-83B7-290D47888386}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.CLI", "UI.CLI\UI.CLI.csproj", "{C533FD14-B340-445B-83B7-290D47888386}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5DD1798A-D293-40B8-B961-BDB116C88EC1}"
 EndProject

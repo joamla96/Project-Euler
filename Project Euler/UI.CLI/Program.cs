@@ -1,12 +1,18 @@
 ﻿using System;
 using Core;
+using UI.CLI.Projects;
 
-namespace UI.CLU {
+namespace UI.CLI {
 	class Program {
 		static void Main(string[] args) {
+			Program p = new Program();
+			p.Run();
+		}
+
+		private void Run() {
 			bool running = true;
 
-			while(running) {
+			while (running) {
 				Console.Clear();
 
 				Console.WriteLine("Project Eular Solver\n");
@@ -20,11 +26,16 @@ namespace UI.CLU {
 					Console.WriteLine("Invalid numer. Please type a valid number only!");
 				}
 
-				switch(MenuSelection) {
+				switch (MenuSelection) {
 					default: Console.WriteLine("Could not find selection."); break;
-					case 0:	running = false; break;
+					case 0: running = false; break;
+					case 1: P1(); break;
 				}
 			}
+		}
+
+		private void P1() {
+			One Ex = new One();
 		}
 	}
 }
