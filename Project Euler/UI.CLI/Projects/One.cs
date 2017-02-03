@@ -37,15 +37,9 @@ namespace UI.CLI.Projects {
 
 			double Result = Maths.Sum(ResultThree.Union(ResultFive));
 
-			
-
-			T3.Start();
 			Console.Write("\n\nTotal Sum: ");
-
-			T3.Join();
-
 			
-			Console.WriteLine(Final.Result);
+			Console.WriteLine(Result);
 
 			Console.WriteLine("\n\nHit a key to close.");
 			Console.ReadKey();

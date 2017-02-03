@@ -20,5 +20,10 @@ namespace Core {
 		public static bool isMultiple(double a, double b) {
 			return (a % b) == 0;
 		}
+
+		// Is Even
+		public static bool isEven(double n) {
+			return (n % 2) == 0;
+		}
 	}
 }
