@@ -35,13 +35,9 @@ namespace UI.CLI.Projects {
 			List<double> ResultThree = (List<double>)Three.Result;
 			List<double> ResultFive = (List<double>)Five.Result;
 
-			IEnumerable<double> Result = ResultThree.Union(ResultFive);
+			double Result = Maths.Sum(ResultThree.Union(ResultFive));
 
-			Multiples Final = new Multiples();
-			Final.Result = Result;
-
-			// Spin off one last thread for the summing
-			Thread T3 = new Thread(Final.Sum);
+			
 
 			T3.Start();
 			Console.Write("\n\nTotal Sum: ");

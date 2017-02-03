@@ -19,6 +19,7 @@ namespace UI.CLI {
 
 				Console.WriteLine("0. Exit");
 				Console.WriteLine("1. Multiples of 3 and 5");
+				Console.WriteLine("2. Even Fibonacci numbers");
 
 				int MenuSelection;
 				Console.WriteLine("\n\nWrite Problem Nr, and hit enter");
@@ -30,12 +31,17 @@ namespace UI.CLI {
 					default: Console.WriteLine("Could not find selection."); break;
 					case 0: running = false; break;
 					case 1: P1(); break;
+					case 2: P2(); break; 
 				}
 			}
 		}
 
 		private void P1() {
 			One.Run();
+		}
+
+		private void P2() {
+			Two.Run();
 		}
 	}
 }
