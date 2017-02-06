@@ -19,5 +19,18 @@ namespace Core {
 				CurrentValue = CurrentValue + LastValue;
 			}
 		}
+
+		public void GetEven() {
+			List<double> Terms = this.Terms;
+			List<double> EvenTerms = new List<double>();
+
+			foreach(double N in Terms) {
+				if(Maths.isEven(N)) {
+					EvenTerms.Add(N);
+				}
+			}
+
+			this.Terms = EvenTerms;
+		}
 	}
 }
